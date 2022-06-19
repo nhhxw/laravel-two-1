@@ -29,3 +29,5 @@ Route::resource('users', UsersController::class)->only(['show', 'update', 'edit'
 
 
 require __DIR__ . '/auth.php';
+
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
